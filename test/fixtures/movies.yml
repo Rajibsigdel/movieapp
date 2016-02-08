@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  decription: MyString
+  director_name: MyString
+  movie_length: MyString
+  casts: MyString
+  release_date: MyString
+  rating: MyString
+  genre: MyString
+  language: MyString
+
+two:
+  name: MyString
+  decription: MyString
+  director_name: MyString
+  movie_length: MyString
+  casts: MyString
+  release_date: MyString
+  rating: MyString
+  genre: MyString
+  language: MyString
