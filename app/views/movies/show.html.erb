@@ -1,48 +1,55 @@
-<%= image_tag @movie.image.url(:medium) %>
-<p>
-  <strong>Name:</strong>
-  <%= @movie.name %>
-</p>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag @movie.image.url(:medium) %>
 
-<p>
-  <strong>Decription:</strong>
-  <%= @movie.decription %>
-</p>
-
-<p>
-  <strong>Director name:</strong>
-  <%= @movie.director_name %>
-</p>
-
-<p>
-  <strong>Movie length:</strong>
-  <%= @movie.movie_length %>
-</p>
-
-<p>
-  <strong>Casts:</strong>
-  <%= @movie.casts %>
-</p>
-
-<p>
-  <strong>Release date:</strong>
-  <%= @movie.release_date %>
-</p>
-
-<p>
-  <strong>Rating:</strong>
-  <%= @movie.rating %>
-</p>
-
-<p>
-  <strong>Genre:</strong>
-  <%= @movie.genre %>
-</p>
-
-<p>
-  <strong>Language:</strong>
-  <%= @movie.language %>
-</p>
-
+      <div class="table-responsive">
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><strong>Name:</strong></td>
+                <td><%= @movie.name %></td>
+              </tr>
+              <tr>
+                <td><strong>Description:</strong></td>
+                <td><%= @movie.decription %></td>
+              </tr>
+              <tr>
+                <td><strong>Director Name:</strong></td>
+                <td><%= @movie.director_name %></td>
+              </tr>
+              <tr>
+                <td><strong>Movie Length:</strong></td>
+                <td><%= @movie.movie_length %></td>
+              </tr>
+              <tr>
+                <td><strong>Casts:</strong></td>
+                <td><%= @movie.casts %></td>
+              </tr>
+              <tr>
+                <td><strong>Release Date:</strong></td>
+                <td><%= @movie.release_date %></td>
+              </tr>
+              <tr>
+                <td><strong>Rating:</strong></td>
+                <td><%= @movie.rating %></td>
+              </tr>
+              <tr>
+                <td><strong>Genre:</strong></td>
+                <td><%= @movie.genre %></td>
+              </tr>
+              <tr>
+                <td><strong>Language:</strong></td>
+                <td><%= @movie.language %></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %>
+
